@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrotech &mdash; The word of agriculture</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/vuesax-icons/linear.css" />
+<link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+<style>
+    
+    header .im{
+       width: 112.92px; 
+        height: 43.01px;
+    }
+     .welcome-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color:#FCFCFC ;
+}
+
+.header .avatar {
+  width: 60px;
+  align-self: center;
+  align-items: center;
+  height: 60px;
+  border-radius: 50%; 
+  object-fit: cover;
+  border: 2px solid #4CAF50; 
+}
+ .welcome-header i{
+ font-size: 50px;
+ 
+}
+.out{
+   background: #F0F2F1 !important;
+   border: 1px solid #09190A;
+   padding-top: 16px;
+   padding-right: 32px;
+   margin-top: 5rem;
+   padding-bottom: 16px;
+   padding-left: 32px;
+   text-decoration: none;
+   font-family: 'poppins';
+   border-radius: 12px;
+   color: #303030;
+   gap: 10px;
+   font-size: 17px;
+   font-weight: 600;
+}
+.mobile-only{
+  display: none;
+  width: 400px;
+  margin: 2rem 1rem;
+  align-self: center;
+  position: absolute;
+  top: 60px;
+  left: 20px;
+  height: 600px;
+  align-items: center;
+  text-align: center;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    background-color: #26682A;
+    position: sticky;
+    top: 20px;
+    z-index: 1000;
+    width: 1300px; 
+    margin-left: 3rem;
+}
+  .sidebar {
+      width: 240px;
+      background: #B9D4BB;
+      padding: 20px;
+      min-height: 100vh;
+      position: fixed;
+      color: #09190A;
+      align-items: center;
+      top: 0;
+      left: 0;
+      margin-right: 4rem;
+    }
+
+    .Product h6{
+    font-family: 'poppins';
+    font-size: 30px;
+    font-weight: 700;
+    color: #2E7D32;
+    margin-left: 18rem;
+    margin-bottom: -0.8rem;
+}
+    .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(378px, 1fr));
+  justify-content: space-between;
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+  max-width: 1000px;
+  margin-left: 17rem;
+  padding: 10px;
+}
+
+    .sidebar-nav {
+      list-style: none;
+      padding: 0;
+      margin-top: 6rem;
+      margin-bottom: 6rem;
+
+    }
+
+    .sidebar-nav li {
+      white-space: nowrap;
+      margin: 30px 0;
+    }
+
+    .sidebar i{
+      margin-right: 6px;
+      font-size: 18px;
+    }
+    .sidebar-nav a {
+      text-decoration: none;
+      color: #09190A;
+       font-weight: 600;
+      font-family: 'poppins';
+      font-size: 17px;
+      display: block;
+      padding: 10px;
+      border-radius: 6px;
+      transition: background 0.3s;
+    }
+    
+    .sidebar-nav a.active,
+    .sidebar-nav a:hover {
+      background: #F0F2F1;
+    }
+
+    .out:hover{
+      opacity: 0.1;
+    }
+
+.menu-icon{
+  display: none;
+}
+
+@media (max-width: 768px) {
+    .header {
+     width: 470px;
+     margin: 0 auto;   
+    }
+     .sidebar-nav li {
+      white-space: nowrap;
+      margin: 9px 0;
+    }
+    .out{
+      margin-top: 2.5rem;
+      align-items: center;
+    }
+     .sidebar-nav {
+      list-style: none;
+      padding: 0;
+      margin-top: 1rem;
+      margin-bottom: 0rem;
+    }
+ 
+  nav.open .welcome-header { 
+    display: flex;
+    color: #303030;
+ }
+ .welcome-header{
+  margin-top: -1rem;
+  white-space: nowrap;
+ }
+ .welcome-header .avatar{
+  width: 46px;
+  height: 46px;
+  border-radius: 50px;
+ }
+ .sidebar{
+    display: none;
+     min-height: 420px;
+     position: absolute;
+ }
+ #mobileSidebar{
+  display: none;
+  width: 400px;
+  align-self: center;
+  position: absolute;
+  top: 40px;
+  left: 20px;
+  height: 520px;
+  align-items: center;
+  padding: 0.5rem;
+  text-align: center;
+  border: 1px solid #09190A;
+ }
+ #mobileSidebar.open{
+  display: flex;
+ }
+   .grid {
+    padding: 0rem;
+    gap: 1rem;
+     margin: auto;
+    max-width: 369px;
+  }
+
+  .welcome-header{
+    display: none;
+  }
+
+  .card {
+    padding: 1rem;
+    min-width: 361px;
+    border-radius: 20px;
+  }
+  
+ 
+ .Product h6{
+    margin: auto;
+    font-size: 1rem;
+    margin-left: 5rem;
+    margin-bottom: 0.5rem;
+ }
+ .login-con{
+    width: 393px;
+    height: 800px;
+ }
+ #menuIcon,
+ .menu-icon{
+   font-size: 2rem;
+    color: #FCFCFC;
+ }
+   nav ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  nav ul li {
+    width: 100px;
+  }
+
+  nav ul li a {
+    display: block;
+    width: 300px;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+   }
+   .sidebar-nav a.active,
+    .sidebar-nav a:hover {
+      background: #F0F2F1;
+    }
+    nav ul li a:hover{
+      padding-left: 0;
+    }
+.menu-icon{display: flex;}
+}
+</style>
+</head>
+<body>
+<header class="header">
+    <a href="index.html">
+     <img src="Union.png" alt="Agrotech &dash;logo" class="im">
+             </a>
+
+     <div class="welcome-header">
+    <h1 class="welcomeMsg"> </h1>
+    <i class="fa-regular fa-bell not" style="color: #fcfcfc;"></i>
+    <a href="Settings.html
+    ">
+     <img src="advater.png" alt="User Avatar" class="avatar"></a>
+  </div>
+     <div class="menu-icon">
+      <i class="fa-regular fa-bell not" style="color: #fcfcfc;"></i>
+           <i class="fa-solid fa-bars" id="menuIcon"></i>
+         
+ </div> 
+ <nav id="mobileSidebar" class="mobile-only">  
+  <ul class="sidebar-nav">
+      <div class="welcome-header">
+    <h1 class="welcomeMsg"></h1>
+   
+    <img src="advater.png" alt="User Avatar" class="avatar">
+  </div>
+     <li><a href="#" class="active"><i class="fa-regular fa-house"></i> Dashboard</a></li>
+    <li><a href="history.html"><i class="ri-shopping-cart-line"></i>View Order</a></li>
+    <li><a href="#" ><i class="fa-solid fa-bag-shopping"></i> Payment  Method</a></li>
+    <li><a href="Settings.html"><i class="fa-solid fa-gear"></i>
+ Settings</a></li>
+  </ul>
+<a href="#" id="logoutBtn" class="out">Log Out</a>
+</nav>          
+    </header>
+      <div class="sidebar">
+
+      <ul class="sidebar-nav">
+    <li><a href="#" class="active"><i class="fa-regular fa-house"></i> Dashboard</a></li>
+        <li><a href="history.html"><i class="ri-shopping-cart-line"></i>View Order</a></li>
+        <li><a href="#" ><i class="fa-solid fa-bag-shopping"></i> Payment  Method</a></li>
+        <li><a href="Settings.html"><i class="fa-solid fa-gear"></i>
+ Settings</a></li>
+  </ul>
+  <a href="#" id="logoutBtn" onclick="logout()" class="out">Log Out</a>
+      </ul>
+    </div>
+     <section class="Product">
+        <h2>Products</h2>
+         <h6>Most Traded Crops For The Month</h6>
+        <div class="grid">
+           <a href="maize.html" style="text-decoration: none; color: inherit;">
+            <div class="card">
+                <img src="corn-2.jpg" alt="">
+
+                <h3>Fresh Maize</h3>
+                <h5><b>N5,000</b> per 50kg bag</h5>
+                <p>200 bags available</p>
+                <p class="ens">Fresh maize harvested June 2025</p>
+                  <p class="locate"><i class="fa-solid fa-location-dot"></i>Benue, Nigeria</p>
+            </div>
+            </a>
+            <a href="soyabeans.html" style="text-decoration: none; color: inherit;">
+              <div class="card">
+                <img src="soya.jpeg" alt="">
+
+                <h3>Soya Beans</h3>
+                <h5><b>N10,000</b> per 50kg bag</h5>
+                <p>200 bags available</p>
+                <p class="ens">Soya Beans harvested June 2025</p>
+                
+                  <p class="locate"><i class="fa-solid fa-location-dot"></i> Benue, Nigeria</p>
+            </div>
+            </a>
+            </div>
+            <h6>Recommended crops</h6>
+            <div class="grid">
+             <div class="card">
+                <img src="yam.jpg" alt="">
+
+                <h3>Yam</h3>
+                <h5><b>N50,000</b> per Trip</h5>
+                <p>200 bags available</p>
+                <p class="ens">Yam harvested January 2025</p>
+                
+                 <p class="locate"><i class="fa-solid fa-location-dot"></i>Benue, Nigeria</p>
+            </div>
+             <div class="card">
+                <img src="beans.jpeg" alt="">
+                <h3>Beans</h3>
+                <h5><b>N20,000</b> per 50kg bag</h5>
+                <p>200 bags available</p>
+                <p class="ens">Beans harvested June 2025</p>
+                <p class="locate"><i class="fa-solid fa-location-dot"></i>  Kano, Nigeria</p>
+            </div>
+               <a href="rice.html" style="text-decoration: none; color: inherit;">
+             <div class="card">
+                <img src="millet-1.jpeg" alt="rice">
+                <h3>Rice</h3>
+                <h5><b>N20,000</b> per 50kg bag</h5>
+                <p>200 bags available</p>
+                <p class="ens">Rice harvested June 2025</p>
+            <p class="locate"><i class="fa-solid fa-location-dot"></i> Kano, Nigeria</p>
+            </div> </a>
+             <div class="card">
+                <img src="mil.webp" alt="">
+
+                <h3>Millet</h3>
+                <h5><b>N5,000</b> per 50kg bag</h5>
+                <p>200 bags available</p>
+                <p class="ens">Millet harvested June 2025</p>
+                
+                  <p class="locate"><i class="fa-solid fa-location-dot"></i> Kano, Nigeria</p>
+            </div>
+        </div>
+    </section>
+<script>
+const username = localStorage.getItem("username") || "Guest";
+document.querySelectorAll('.welcomeMsg').forEach(el => {
+  el.textContent = `Welcome ${username}`;
+});
+const mobileSidebar = document.getElementById("mobileSidebar");
+const menuIcon = document.getElementById("menuIcon");
+
+menuIcon.addEventListener("click", () => {
+  mobileSidebar.classList.toggle("open");
+
+    if (menuIcon.classList.contains("fa-bars")) {
+    menuIcon.classList.remove("fa-bars");
+    menuIcon.classList.add("fa-xmark");
+  } else {
+    menuIcon.classList.remove("fa-xmark");
+    menuIcon.classList.add("fa-bars");
+  }
+});
+
+ function logout() {
+  const confirmLogout = confirm("Are you sure you want to log out?");
+  if (confirmLogout) {
+    localStorage.clear();
+    window.location.href = "login.html";
+  }
+}
+document.addEventListener("DOMContentLoaded", () => {
+  const savedPic = localStorage.getItem("profilePic");
+  if (savedPic) {
+    document.querySelectorAll(".avatar").forEach(img => {
+      img.src = savedPic; 
+    });
+  }
+});
+</script>
+</body>
+</html>

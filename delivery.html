@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrotech &mdash; The word of agriculture</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<style>
+header .im{
+       width: 112.92px; 
+        height: 43.01px;
+}
+.welcome-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color:#FCFCFC ;
+}
+
+.header .avatar {
+  width: 60px;
+  align-self: center;
+  align-items: center;
+  height: 60px;
+  border-radius: 50%; 
+  object-fit: cover;
+  border: 2px solid #4CAF50; 
+}
+ .welcome-header i{
+ font-size: 50px; 
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    background-color: #26682A;
+    position: sticky;
+    top: 20px;
+    z-index: 1000;
+    width: 1300px; 
+    margin-bottom: 3rem;
+    margin-left: 3rem;
+}
+  
+.menu-icon{
+  display: none;
+}
+ h2 {
+      margin-bottom: 15px;
+    }
+     .delivery-box {
+      max-width: 900px;
+      margin: auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      align-items: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    h2 {
+      margin-bottom: 15px;
+    }
+    label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: 500;
+    }
+    input[type="text"], input[type="number"] {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .hidden {
+      display: none;
+    }
+    .btn {
+      background: #007b2d;
+      color: #fff;
+      border: none;
+      padding: 12px 18px;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 300px;
+      font-size: 16px;
+    }
+    .btn:hover {
+      background: #005c22;
+    }
+    .info {
+      margin-top: 15px;
+      font-size: 14px;
+      color: #555;
+    }
+    .options{
+        gap: 3rem;
+        display: flex;
+        margin: 2rem;
+        font-size: 1.5rem;
+        font-weight: 500;
+        font-family: 'poppins';
+    }
+    .fee {
+      margin: 10px 0;
+      font-weight: bold;
+      font-size: 1.3rem;
+      color: #333;
+    }
+@media(max-width: 768px) {
+    .header {
+     width: 470px;
+     margin: 0 auto;   
+    }
+ 
+    .delivery-box{
+      counter-reset: #333;
+      max-width: 393px;
+      align-items: left;
+    }
+    .menu-icon{
+      font-size: 1rem;
+    }
+  nav.open .welcome-header { 
+    display: flex;
+    color: #303030;
+ }
+ .welcome-header{
+  margin-top: -1rem;
+  white-space: nowrap;
+ }
+ .welcome-header .avatar{
+  width: 46px;
+  height: 46px;
+  border-radius: 50px;
+ }
+ 
+ .login-con{
+    flex-direction: column;
+ }
+ .options{
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 1.3rem;
+  margin-top: 2rem;
+ }
+ label{
+  width: 353px;
+  height: 78px;
+ }
+ 
+ .options label{
+  margin-top: -1rem;
+ }
+ #menuIcon,
+ .menu-icon{
+   font-size: 1rem;
+    color: #FCFCFC;
+ }
+ .hidden input[type="text"], input[type="number"]{
+  width: 353px;
+  margin:0;
+ }
+ .welcome-header h1{
+  display: none;
+ }
+.menu-icon{display: flex;}
+}
+</style>
+</head>
+<body>
+<header class="header">
+    <a href="index.html">
+     <img src="Union.png" alt="Agrotech &dash;logo" class="im">
+             </a>
+
+     <div class="welcome-header">
+    <h1 class="welcomeMsg"> </h1>
+    <i class="fa-regular fa-bell not" style="color: #fcfcfc;"></i>
+     <img src="advater.png" alt="User Avatar" class="avatar">
+  </div>
+           
+    </header>
+    <div class="delivery-box">
+        <h2><a href="maize.html" style="text-decoration: none; color: inherit;"><i class="fa-solid fa-arrow-left"></i></a> Delivery Details</h2>
+        <div class="options">
+    <label>
+      <input type="checkbox" id="homeCheck"> Deliver to location
+    </label>
+    <label>
+      <input type="checkbox" id="storeCheck"> Pick in store
+    </label>
+    </div>
+     <div id="homeDelivery" class="hidden info">
+        <label>
+        Receiver’s name
+         <input type="text" id="receiverName" placeholder="Receiver’s name" required>
+      </label>
+      <label>
+        Delivery address
+      <input type="text" id="address" placeholder="Delivery address" required>
+      </label>
+      <label>
+        Nearest landmark
+      <input type="text" id="landmark" placeholder="Nearest landmark">
+      </label>
+      <label>Phone number
+      <input type="number" id="phone" placeholder="Phone number" required>
+      <p class="fee">Delivery fee: ₦5,500</p>
+      </label>
+    </div>
+     <div id="storePickup" class="hidden info">
+        <label>
+        Receiver’s name
+      <input type="text" id="receiverName" placeholder="Receiver’s name" required>
+      </label>
+      <label>
+        Delivery address
+      <input type="text" id="address" placeholder="Delivery address" required>
+      </label>
+      <label>
+        Nearest landmark
+      <input type="text" id="landmark" placeholder="Nearest landmark">
+      </label>
+      <label>Phone number
+      <input type="number" id="phone" placeholder="Phone number" required>
+      </label>
+      <p><strong>Phone:</strong>+234 9012345678</p>
+      <p><strong>Address:</strong> 45 Lekki Phase 1, Lagos</p>
+    </div>
+<button class="btn">Proceed to payment</button>
+</div>
+</body>
+<script>
+    const username = localStorage.getItem("username") || "Guest";
+document.querySelectorAll('.welcomeMsg').forEach(el => {
+  el.textContent = `Welcome ${username}`;
+});
+
+
+   const homeCheck = document.getElementById("homeCheck");
+  const storeCheck = document.getElementById("storeCheck");
+  const homeDeliveryD = document.getElementById("homeDelivery");
+  const storePickupD = document.getElementById("storePickup");
+
+  function toggleDelivery(options){
+    if(options === "home"){
+        homeCheck.checked = true;
+        storeCheck.checked = false;
+        homeDeliveryD.classList.remove("hidden");
+        storePickupD.classList.add("hidden")
+    }else{
+        storeCheck.checked = true;
+        homeCheck.checked = false;
+        storePickupD.classList.remove("hidden");
+        homeDeliveryD.classList.add("hidden"); 
+    }
+  }
+  homeCheck.addEventListener("change", () => toggleDelivery("home"));
+   storeCheck.addEventListener("change", () => toggleDelivery("store"));
+
+     document.addEventListener("DOMContentLoaded", () => {
+  const savedPic = localStorage.getItem("profilePic");
+  if (savedPic) {
+    document.querySelectorAll(".avatar").forEach(img => {
+      img.src = savedPic; // ✅ apply to ALL avatars on page
+    });
+  }
+});
+</script>
+</html>

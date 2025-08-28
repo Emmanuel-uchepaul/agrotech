@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrotech &mdash; The word of agriculture</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+<style>
+    
+    header .im{
+       width: 112.92px; 
+        height: 43.01px;
+    }
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    background-color: #26682A;
+    position: sticky;
+    top: 20px;
+    z-index: 1000;
+   
+    margin: 1rem auto;
+}
+.cat{
+    align-self: center;
+    padding: 0.75rem 1.25rem;
+    text-align: center;
+    background: #2E7D32;
+    color: #fff;
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+    align-self: center;
+    width: 100%;
+    border: none;
+    display: block;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+.cat i{
+      transform: rotate(0deg);
+}
+
+ .login-link { 
+  margin-top: -2rem;   
+  font-size: 18px;
+  font-weight: 600;
+  font-family: 'poppins';
+  color: #303030;        
+}
+
+.login-link a {
+  color: #2E7D32;      
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.login-link a:hover i{
+    display: inline;
+}
+.login-link i{
+    display: none;
+    font-size: 1rem;
+    margin-top: 3px;
+    transition: all 2s ease;
+}
+
+body {
+    background-color: #F0F2F1;
+    font-family: 'Poppins', sans-serif;
+}
+
+.login-con{
+ display: flex;
+  width: 1000px;
+  height: 400px;
+  margin: 0 auto;
+}
+.form{
+  width: 509px;
+  height: 680px;
+  padding: 10px;
+  border-bottom-right-radius: 30px;
+  border-top-right-radius: 30px;
+  background: #B9D4BB;
+
+}
+.form-1{
+    height: 155px;
+    margin-bottom: 10px;
+}
+.form-1 label{
+     width: 569px;
+    align-self: center;
+    height: 20px;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+}
+.form label span{
+    width: 569px;
+    align-self: center;
+    font-family: 'poppins';
+    font-weight: 600;
+    font-size: 20px;
+    color: #173F19;
+}
+.form input[type='checkbox']{
+    width: 50px;
+    height: 19px;
+    border: none;
+    align-self: center;
+    margin-right: -1rem;
+}
+.form h2 {
+  color: #2E7D32;
+  text-align: center;
+  font-family: 'poppins';
+  font-size: 32px;
+  width: 485px;
+  height: 32px;
+  font-weight: 700;
+
+}
+
+ .form-p{
+    width: 458px;
+    height: 16px;
+    font-family: 'poppins';
+    font-size: 16px;
+    font-weight: 600;
+    color: #303030;
+    margin: 2rem;
+    line-height: 100%;
+}
+form input[type="email"],
+form input[type="password"] {
+  width: 470px;
+  height: 75px;
+  border-radius: 10px;
+  border: none;
+  margin: 0.8rem 0;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+.short-img{
+     width: 509px;
+     padding: 10px;
+     height: 700px;
+     color: white;
+     margin-top: -0.6rem;
+}
+
+@media (max-width: 768px) {
+    header {
+     width: 460px;
+     margin: 0 auto;   
+    }
+ 
+  nav.open .cta { 
+    display: block;
+ }
+ nav{
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 98%;
+    background-color: #FCFCFC;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    display: none;
+    padding: 1rem 0;
+ }
+ .login-con{
+    width: 393px;
+    height: 800px;
+ }
+ #menuIcon{
+    color: #FCFCFC;
+ }
+ .form{
+    width: 361px;
+ }
+ .form h2{
+    width: 335px;
+    height: 36px;
+    font-size: 28px;
+ }
+ .form-p{
+    margin: 0px;
+    width: 335px;
+    height: 12px;
+    font-size: 12px;
+    font-weight: 400;
+ }
+form input[type="email"],
+form input[type="password"]{
+    width: 307px;
+    height: 50px;
+    border-radius: 10px;
+}
+.short-img{
+    display: none;
+}
+}
+
+
+</style>
+</head>
+<body>
+<header class="header">
+    <a href="index.html">
+     <img src="Union.png" alt="Agrotech &dash;logo" class="im">
+             </a>
+    <nav>
+         <a class="cta " href="signup.html">
+             Sign Up <i class="fa-solid fa-arrow-right"></i> 
+        </a>
+        </nav>
+           <i class="fa-solid fa-bars" id="menuIcon"></i>
+    </header>
+<div class="login-con">
+    <div class="short-img">
+        <img src="Frame 244.png" alt="" class="short-img">
+    </div>
+    <div class="form">
+        <h2>Log In</h2>
+        <p class="form-p">Login with your email and password to place your order</p>
+        <form id="loginForm">
+            <div class="form-1">
+    <label for="email">
+      <span>Email address</span>
+      <input type="email" id="loginEmail" required>
+    </label>
+  </div>
+  <div class="form-1">
+    <label for="password">
+      <span>Password</span>
+      <input type="password" id="loginPassword" required>
+    </label>
+  </div>
+            
+        <label for="checkbox">
+        <input type="checkbox">
+        <span>Remenber me</span></label>
+        <button href="/dashboard.html" class="cat" type="submit">Log  in <i class="fa-solid fa-arrow-right"></i> </button>
+        <p><p class="login-link">Do not have an account? <a href="signup.html">Sign up <i class="fa-solid fa-arrow-right"></i></p></p>
+        </form>
+    </div>
+</div>       
+<script src="index.js"></script>
+<script>
+document.getElementById("loginForm").addEventListener("submit", function (e) {
+  e.preventDefault();
+
+
+  const email = document.getElementById("loginEmail").value.trim();
+  const password = document.getElementById("loginPassword").value.trim();
+
+ 
+  const storedEmail = localStorage.getItem("signupEmail");
+  const storedPassword = localStorage.getItem("signupPassword");
+  const storedName = localStorage.getItem("signupName");
+
+  if (email === storedEmail && password === storedPassword) {
+    
+    localStorage.setItem("username", storedName || email.split("@")[0]);
+
+    alert("Login successful! Redirecting to  Your dashboard page.");
+    window.location.href = "dashboard.html";
+  } else {
+    alert("Invalid email or password. Please try again.");
+  }
+});
+
+</script>
+
+
+</body>
+</html>

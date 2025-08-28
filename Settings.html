@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrotech &mdash; The word of agriculture</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<style>
+header .im{
+       width: 112.92px; 
+        height: 43.01px;
+}
+.welcome-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color:#FCFCFC ;
+}
+
+.header .avatar {
+  width: 60px;
+  align-self: center;
+  align-items: center;
+  height: 60px;
+  border-radius: 50%; 
+  object-fit: cover;
+  border: 2px solid #4CAF50; 
+}
+ .welcome-header i{
+ font-size: 50px; 
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    background-color: #26682A;
+    position: sticky;
+    top: 20px;
+    z-index: 1000;
+    width: 1300px; 
+    margin-bottom: 3rem;
+    margin-left: 3rem;
+}
+  
+.menu-icon{
+  display: none;
+}
+ h2 {
+      margin-bottom: 15px;
+    }
+     .delivery-box {
+      max-width: 900px;
+      margin: auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      align-items: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    h2 {
+      margin-bottom: 15px;
+    }
+    .label {
+      display: flex;
+      width: 680px;
+      gap: 6rem;
+      align-items: center;
+      height: 48px;
+      margin-bottom: 2rem;
+      background-color: #F7F8F8;
+      font-weight: 500;
+      margin-top: 2rem;
+      border-radius: 10px;
+      white-space: nowrap;
+    }
+    input {
+      width: 600px;
+      height: 41px;
+      border-radius: 10px;
+      border: none;
+      background: #D5E5D6;
+    }
+   input:focus{
+       outline: none;
+      box-shadow: 0 0 5px rgb(46, 125, 50);
+}
+    label{
+      font-family: 'poppins';
+      font-size: 20px;
+      font-weight: 500;
+      margin: 5px;
+      color: #000000;
+    }
+    .profile{
+      width: 157px;
+      height: 157px;
+      border-radius: 100px;
+    }
+    button{
+      background-color: #2E7D32;
+      border: none;
+      border-radius: 10px;
+      color: #FCFCFC;
+      width: 300px;
+      font-size: 22px;
+      font-weight: 700;
+      font-family: 'poppins';
+      align-self: center;
+      align-items: center;
+      height: 56px;
+      margin-left: 13rem;
+      transition: all .2s;
+    }
+    button:hover{
+      background-color: #1b501e;
+    }
+    .a{
+      font-size: 32px;
+      font-weight: 700;
+      font-family: 'poppins';
+      color: #000000;
+      text-decoration: none;
+      height: 32px;
+      align-items: center;
+      text-align: center;
+      margin-left: -19rem;
+      margin-bottom: -5rem;
+    }
+    .profile-p{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .profile-p span{
+      width: 105px;
+      height: 32px;
+      font-size: 32px;
+      font-family: 'poppins';
+      font-weight: 700;
+    }
+    .con{
+      max-width: 1000px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0 auto;
+    }
+    body{
+       background-color: #FAFBFA;
+    }
+@media(max-width: 768px) {
+    .header {
+     width: 470px;
+     margin: 0 auto;   
+    }
+ 
+  nav.open .welcome-header { 
+    display: flex;
+    color: #303030;
+ }
+ .welcome-header{
+  white-space: nowrap;
+ }
+ .welcome-header .avatar{
+  width: 46px;
+  height: 46px;
+  border-radius: 50px;
+ }
+ 
+ .login-con{
+    flex-direction: column;
+ }
+ #menuIcon,
+ .menu-icon{
+   font-size: 2rem;
+    color: #FCFCFC;
+ }
+.menu-icon{display: flex;}
+.con{
+  align-items: center;
+  width: 361px;
+  height: 523px;
+  
+}
+.label{
+  display: block;
+  width: 337px;
+  height: 71px;
+  align-items: center;
+  margin: 0 auto;
+}
+input{
+  width: 337px;
+  height: 41px;
+  border-radius: 10px;
+}
+label{
+  display: block;
+  align-items: left;
+  text-align: left;
+}
+button{
+  width: 150px;
+  height: 32px;
+  margin-left: 50px;
+  margin-top: 1.5rem;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  
+}
+.welcome-header h1{
+  display: none;
+}
+.a{
+  width: 200px;
+  height: 20px;
+  margin-top: 61px;
+  margin-left: 16px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.profile-p{
+  width: 64px;
+  height: 88px;
+  margin-top: 132px;
+  
+
+}
+.profile{
+  width: 64px;
+  height: 64px;
+  border-radius: 40.76px;
+}
+.profile-p span{
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 3.5rem;
+}
+.welcome-header i {
+  font-size: 2.8rem;
+}
+}
+</style>
+</head>
+<body>
+<header class="header">
+    <a href="index.html">
+     <img src="Union.png" alt="Agrotech &dash;logo" class="im">
+             </a>
+
+     <div class="welcome-header">
+    <h1 class="welcomeMsg"> </h1>
+    <i class="fa-regular fa-bell not" style="color: #fcfcfc;"></i>
+    </a><img src="advater.png" alt="User Avatar" class="avatar">
+  </div>
+           
+    </header>
+    <section>
+    <p class="a"> <a href="dashboard.html" class="a"><i class="fa-solid fa-arrow-left"></i></a>Settings</p>
+  <div class="con">
+     <div class="profile-p">
+      <img src="advater.png" alt="Profile Picture" class="profile" id="profileImg">
+      <input type="file" id="uploadImg" accept="image/*" style="display:none">
+      <span>Profile</span>
+    </div>
+    <form class="form" id="profileForm">
+      <div class="label">
+        <label>Name:</label>
+        <input type="text" id="nameInput">
+      </div>
+      <div class="label">
+        <label>Gender:</label>
+        <input type="text" id="genderInput">
+      </div>
+      <div class="label">
+        <label>Password:</label>
+        <input type="password" id="passwordInput">
+      </div>
+      <div class="label">
+        <label>Confirm Password:</label>
+        <input type="password" id="confirmPasswordInput">
+      </div>
+      <div class="label">
+        <label>Phone Number:</label>
+        <input type="number" id="phoneInput">
+      </div>
+      <button type="submit">Save Changes</button>
+    </form>
+  </section>
+  </body>
+<script>
+const username = localStorage.getItem("username") || "Guest";
+document.querySelectorAll('.welcomeMsg').forEach(el => {
+  el.textContent = `Welcome ${username}`;
+});
+  // Load saved values from localStorage
+
+const phone = localStorage.getItem("phone") || "";
+const password = localStorage.getItem("password") || "";
+const avatar = localStorage.getItem("avatar") || "advater.png"; // default avatar
+
+// Fill inputs
+document.getElementById("nameInput").value = username;
+document.getElementById("phoneInput").value = phone;
+document.getElementById("passwordInput").value = password;
+document.getElementById("confirmPasswordInput").value = password;
+
+// Update avatar everywhere
+document.querySelectorAll(".avatar").forEach(img => {
+  img.src = avatar;
+});
+
+// Save changes
+document.getElementById("profileForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+  localStorage.setItem("username", document.getElementById("nameInput").value);
+  localStorage.setItem("phone", document.getElementById("phoneInput").value);
+  localStorage.setItem("password", document.getElementById("passwordInput").value);
+
+  // if you want to allow avatar change later:
+  // localStorage.setItem("avatar", document.getElementById("avatarInput").value);
+
+  alert("Profile updated successfully!");
+  window.location.href = 'dashboard.html';
+});
+
+
+    const profileImg = document.getElementById("profileImg");
+    const navAvatar = document.getElementById("navAvatar");
+    const uploadImg = document.getElementById("uploadImg");
+
+    profileImg.addEventListener("click", () => uploadImg.click());
+
+    uploadImg.addEventListener("change", function() {
+      const file = this.files[0];
+      if (file) {
+        const reader = new FileReader();
+        reader.onload = function(e) {
+          profileImg.src = e.target.result;
+          navAvatar.src = e.target.result;
+          localStorage.setItem("profilePic", e.target.result);
+        }
+        reader.readAsDataURL(file);
+      }
+    });
+
+
+uploadImg.addEventListener("change", function() {
+  const file = this.files[0];
+  if (file) {
+    const reader = new FileReader();
+    reader.onload = function(e) {
+      profileImg.src = e.target.result;
+      localStorage.setItem("profilePic", e.target.result); 
+    }
+    reader.readAsDataURL(file);
+  }
+});
+
+
+const savedPic = localStorage.getItem("profilePic");
+if (savedPic) {
+  profileImg.src = savedPic;
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  const savedPic = localStorage.getItem("profilePic");
+  if (savedPic) {
+    document.querySelectorAll(".avatar").forEach(img => {
+      img.src = savedPic; // ✅ apply to ALL avatars on page
+    });
+  }
+});
+
+</script>
+</html>

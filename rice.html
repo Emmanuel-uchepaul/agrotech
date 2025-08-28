@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrotech &mdash; The word of agriculture</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/vuesax-icons/linear.css" />
+<link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+<style>
+header .im{
+       width: 112.92px; 
+        height: 43.01px;
+}
+.welcome-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color:#FCFCFC ;
+}
+
+.header .avatar {
+  width: 60px;
+  align-self: center;
+  align-items: center;
+  height: 60px;
+  border-radius: 50%; 
+  object-fit: cover;
+  border: 2px solid #4CAF50; 
+}
+ .welcome-header i{
+ font-size: 50px; 
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    background-color: #26682A;
+    position: sticky;
+    top: 20px;
+    z-index: 1000;
+    width: 1300px; 
+    margin-left: 3rem;
+}
+  
+.menu-icon{
+  display: none;
+}
+
+.login-con{
+  display: flex;
+  width: 1000px;
+  height: auto;
+  margin-top: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.form{
+  width: 509px;
+  height: 588px;
+  padding-left: 20px;
+  border-bottom-right-radius: 30px;
+  border-top-right-radius: 30px;
+  background: #F0F2F1;
+
+}
+.form h2{
+    color: #303030;
+    font-family: 'poppins';
+    font-size: 56px;
+    font-weight: 700;
+}
+.form h2 i{
+    font-size: 46px;
+    opacity: 0.6;
+    color: #292D32;
+}
+.form .p{
+    font-family: 'poppins';
+    font-size: 20px;
+    font-weight: 500;
+    color: #A0A1A1;
+    margin-top: -3rem;
+}
+.form .i{
+    display: block;
+}
+.form .i i {
+    font-size: 42px;
+    margin-top: 1.5rem;
+}
+.form p {
+    color: #303030;
+    font-family: 'poppins';
+    font-size: 19px;
+    font-weight: 500;
+}
+ 
+.short-img{
+     width: 509px;
+     padding: 10px;
+     height: 700px;
+     align-items: stretch;
+     color: white;
+     margin-top: -0.6rem;
+}
+.short-img img{
+     width: 509px;
+     padding: 10px;
+     height: 610px;
+     filter: brightness(1.10);
+     color: white;
+     margin-top: -0.6rem;
+}
+
+.form h3{
+    font-family: 'poppins';
+    font-weight: 700;
+    font-size: 38px;
+    color: #303030;
+}
+.form h3 sub{
+    font-size: 16px;
+    color: #A0A1A1;
+}
+.form h3 del{
+    font-size: 26px;
+    font-weight: 700;
+    font-family: 'poppins';
+    color: #A0A1A1;
+}
+
+.purchase-container {
+    display: flex;
+    align-items: center;
+    gap: 55px;
+    margin-top: 20px;
+  }
+
+  .quantity-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid #2E7D32;
+    border-radius: 10px;
+    padding-top: 12px;
+    padding-right: 16px;
+    padding-bottom: 12px;
+    padding-left: 16px;
+    font-size: 20px;
+    font-weight: 500;
+    height: 46px;
+    background: transparent;
+    font-family: 'Poppins';
+  }
+
+  .qty-btn {
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    background: transparent;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #303030;
+    width: 26px;
+    height: 26px;
+  }
+
+  #quantity {
+    margin: 0 10px;
+    font-weight: 600;
+    color: #303030;
+  }
+
+  .buy-btn {
+    background: #2E7D32;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    width: 190px;
+    height: 46px;
+    padding-bottom: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+
+  .buy-btn:hover {
+    background: #236026;
+  }
+@media(max-width: 768px) {
+    .header {
+     width: 470px;
+     margin: 0 auto;   
+    }
+ 
+  nav.open .welcome-header { 
+    display: flex;
+    color: #303030;
+ }
+ .welcome-header{
+  white-space: nowrap;
+ }
+ .welcome-header i {
+    font-size: 2.8rem;
+ }
+ .welcome-header .avatar{
+  width: 46px;
+  height: 46px;
+  border-radius: 50px;
+ }
+ 
+ .login-con{
+    flex-direction: column;
+ }
+  .login-con {
+    flex-direction: column;
+    width: 100%;
+    margin: 1rem auto;
+    padding: 0 1rem;
+  }
+
+  .short-img {
+    width: 100%;
+    height: auto;
+    margin-top: 2rem;
+    text-align: center;
+  }
+  .short-img img {
+    width: 100%;
+    height: auto;
+    margin-bottom: -0.6rem;
+  }
+
+  .form {
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    border-radius: 12px;
+    border-top-left-radius: 40px;
+    margin-top: -0.8rem;
+  }
+
+  .form h2 {
+    font-size: 28px;
+    margin-bottom: 1rem;
+    display: block;
+  }
+  .form .p{
+    margin: auto;
+  }
+  .form h3 {
+    font-size: 28px;
+  }
+  .form h3 sub,
+  .form h3 del {
+    font-size: 16px;
+  }
+
+  .purchase-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .quantity-box {
+    width: 188px;
+    height: 50px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 12px;
+    font-weight: 500;
+    padding-bottom: 12px;
+    font-size: 20px;
+  }
+
+  .buy-btn {
+    width: 188px;
+    height: 50px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 20px;
+    font-weight: 500;
+  }
+ #menuIcon,
+ .menu-icon{
+   font-size: 2rem;
+    color: #FCFCFC;
+ }
+.menu-icon{display: flex;}
+.welcome-header h1{
+  display: none;
+}
+}
+</style>
+</head>
+<body>
+<header class="header">
+    <a href="index.html">
+     <img src="Union.png" alt="Agrotech &dash;logo" class="im">
+             </a>
+
+     <div class="welcome-header">
+    <h1 class="welcomeMsg"> </h1>
+    <i class="fa-regular fa-bell not" style="color: #fcfcfc;"></i>
+     <img src="advater.png" alt="User Avatar" class="avatar">
+  </div>
+           
+    </header>
+    <div class="login-con">
+        <div class="short-img">
+         <img src="Frame 244.png" alt="">
+        </div>
+        <div class="form">
+            <h2><a href="dashboard.html" style="text-decoration: none; color: inherit;"><i class="fa-solid fa-arrow-left"></i></a> Rice</h2>
+            <p class="p">Fresh and Nutritious Rice!</p>
+            <div class="i">
+            <i class="fa-solid fa-star " style="color: #e39f10;"></i>
+            <i class="fa-solid fa-star " style="color: #e39f10;"></i>
+            <i class="fa-solid fa-star " style="color: #e39f10;"></i>
+            <i class="fa-solid fa-star " style="color: #e39f10;"></i>
+            <i class="fa-solid fa-star-half" style="color: #e39f10;"></i>
+            </div>
+            <p>Premium quality rice, carefully processed and naturally rich in nutrients. Cleaned, bagged, and sealed to ensure freshness, proper accounting, and safe transportation. Perfect for everyday meals and family nourishment.</p> 
+
+            <h3 class="total"><b id="price">
+N20,000</b><sub  id="new-sub">per 50kg bag</sub>  <del id="old-price">N21,500</del> <sub id="old-sub">per 50kg bag</sub></h3>
+          <div class="purchase-container">
+  <div class="quantity-box">
+      <button class="qty-btn" id="decrease" onclick="cartMinus()">−</button>
+      <span id="quantity" class="quantity">1 Bag</span>
+      <button class="qty-btn" id="increase" onclick="cartPlus()">+</button>
+  </div>
+  <button class="buy-btn" onclick="buynow();">Buy Now</button>
+</div>
+        </div>
+    </div>   
+</body>
+<script>
+  const username = localStorage.getItem("username") || "Guest";
+document.querySelectorAll('.welcomeMsg').forEach(el => {
+  el.textContent = `Welcome ${username}`;
+});
+
+  let quantity = 1;
+  const pricePerBag = 20000;
+  const oldPricePerBag = 21500;
+
+
+      function cartPlus(){
+         quantity++;
+       showQuantity();
+        }
+
+        function cartMinus(){
+          if(quantity > 1)
+         quantity--;
+       showQuantity();
+        }
+
+         function showQuantity() {
+    document.querySelector('.quantity').innerHTML =
+      `${quantity} ${quantity > 1 ? "Bags" : "Bag"}`;
+
+    
+    let total = quantity * pricePerBag;
+    let oldTotal = quantity * oldPricePerBag;
+
+    document.getElementById('price').innerHTML = `₦${total.toLocaleString()}`;
+    document.getElementById('old-price').innerHTML = `₦${oldTotal.toLocaleString()}`;
+
+    document.getElementById('new-sub').innerHTML = `per ${quantity} ${quantity > 1 ? "bags" : "bag"}`;
+    document.getElementById('old-sub').innerHTML = `per ${quantity} ${quantity > 1 ? "bags" : "bag"}`;
+  }
+  function buynow(){
+    window.location.href = "delivery.html"
+    }
+  showQuantity();
+
+  document.addEventListener("DOMContentLoaded", () => {
+  const savedPic = localStorage.getItem("profilePic");
+  if (savedPic) {
+    document.querySelectorAll(".avatar").forEach(img => {
+      img.src = savedPic; // ✅ apply to ALL avatars on page
+    });
+  }
+});
+</script>
+</html>
