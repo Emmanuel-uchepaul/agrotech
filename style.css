@@ -418,7 +418,7 @@ height: 64px;
   }
   .header{
     margin: 0;
-    
+
   }
     .Product h2 {
     font-size: 1.8rem;
@@ -608,11 +608,10 @@ nav li a{
   z-index: 3;
 }
 .get-started{
-    width: 190px;
+    width: 210px;
     height: 48px;
-    align-items: center;
-    text-align: center;
-    display: block;
+    display: inline-block;
+    margin-top: 3rem;
 }
 nav{
     position: absolute;
