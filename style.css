@@ -74,6 +74,7 @@ nav ul li a:hover{
 .hero{
     display: flex;
     justify-content: space-between;
+    margin: 0;
     
 }
 .hero-info{
@@ -84,7 +85,6 @@ nav ul li a:hover{
     background-color: #FCFCFC;
     width: 190px;
     height: 48px;
-    display: block;
     padding-top: 16px;
     padding-left: 32px;
     color: inherit;
@@ -406,6 +406,20 @@ height: 64px;
   background-color: #D5E5D6;
 }
 @media(max-width: 786px){
+  *{
+    margin: 0;
+  
+  }
+  body{
+    margin: 0;
+  }
+  .container{
+    margin: 0;
+  }
+  .header{
+    margin: 0;
+    
+  }
     .Product h2 {
     font-size: 1.8rem;
     line-height: 1.2;
@@ -426,6 +440,7 @@ height: 64px;
   .grid {
     padding: 0.5rem;
     gap: 1rem;
+    margin: 0;
     max-width: 369px;
   }
   .Service h2.Service h2 {
@@ -434,7 +449,7 @@ height: 64px;
 
   .card {
     padding: 1rem;
-    min-width: 361px;
+    max-width: 350px;
     border-radius: 20px;
   }
 
@@ -507,8 +522,6 @@ height: 64px;
   .info .p{
      margin-bottom: 5rem;
   }
-
- 
   .image-sec {
     width: 100%;
     max-width: 320px;
